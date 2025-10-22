@@ -4,7 +4,7 @@ Welcome to the **Kolam Web App**, an interactive platform that preserves and pro
 
 ---
 
-## 🖼️ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
@@ -62,12 +62,12 @@ Welcome to the **Kolam Web App**, an interactive platform that preserves and pro
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 **Clone the repo:**
 ```
 bash
-git clone <your-repo-url>
+git clone https://github.com/hannahjan06/kolamify_SIH.git
 cd kolam_app
 ```
 **Install dependencies**
@@ -82,19 +82,18 @@ python app.py
 > Open the frontend  
 > Open index.html in your browser (or use Flask’s template rendering). All features—upload, generate, chatbot, and drawing—will be functional.  
 
-## 🖌 Features in Detail
+## Features in Detail
 
 | Feature | Description |
 |---------|-------------|
 | **Kolam Classification** | Upload a Kolam image, get AI-predicted motif/type. |
 | **Kolam Generation** | Generate new Kolam designs using AI. |
-| **Chatbot** | Ask questions about Kolam, history, and technique. |
 | **Draw Your Own Kolam** | Draw, color, and save personal Kolams. |
 | **Mood-based Recommendations** | View symmetric designs for relaxation or colorful ones for inspiration. |
 
 ---
 
-## 📦 Training notebooks
+## Training notebooks
 
 For anyone who wants to see our workflow:
 
@@ -111,7 +110,7 @@ For anyone who wants to see our workflow:
 
 ---
 
-## 📜 References
+## References
 
 - KolamNet: Kolam classification using EfficientNetB0  
 - Generative AI for Rangoli/Kolam patterns  
