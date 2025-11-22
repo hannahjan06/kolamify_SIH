@@ -1,129 +1,175 @@
-# 🌸 Kolam Cultural Heritage Web App
+<h1 align="center">Kolamify AI</h1>
 
-Welcome to the **Kolam Web App**, an interactive platform that preserves and promotes **Kolam**, a traditional South Indian floor art. This project combines **AI, cultural heritage, and interactive web design** in a single, easy-to-use prototype.  
+<p align="center">
+  Cultural Intelligence Meets Creative Technology
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/hannahjan06/kolamify_SIH" alt="last commit">
+  <img src="https://img.shields.io/github/languages/top/hannahjan06/kolamify_SIH?color=ed7b33&label=top%20language" alt="Python">
+  <img src="https://img.shields.io/github/languages/count/hannahjan06/kolamify_SIH?label=languages" alt="languages">
+</p>
+
+<p align="center">
+  Built using:
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask&logoColor=white">
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
+  <img src="https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript%20Canvas-007ACC?style=for-the-badge">
+</p>
 
 ---
 
-## Features
+## Overview
 
-| Feature | Description |
-|---------|-------------|
-| **Kolam Classification** | Upload a Kolam image and get AI-predicted motif/type using **EfficientNetB0**. |
-| **Kolam Generation** | Generate new Kolam designs using AI. |
-| **Chatbot** | Ask questions about Kolam history, symbolism, and techniques through an AI-powered chatbot. |
-| **Draw Your Own Kolam** | Draw, color, and save personal Kolams using a canvas tool. |
-| **Mood-based Recommendations** | Explore symmetric designs for relaxation or colorful ones for inspiration (art therapy). |
+Kolamify AI is an interactive cultural heritage platform focused on preserving and modernizing the South Indian art form known as Kolam. The system combines machine learning, generative design, and guided educational interaction to help users explore, create, and understand traditional Kolam patterns in a structured and meaningful way.
 
-> 💡 **Tip:** Users can explore Kolam as a relaxing, creative experience — combining cultural learning with mood-based art therapy.  
+The project functions as more than a utility; it serves as a digital cultural archive and creative tool.
 
 ---
 
-## 🗂 Project Structure
+## Core Features
 
-```text
-/kolam_app
+* **Kolam Classification**
+  Upload a Kolam image and receive an automated classification of its motif and style using a fine-tuned EfficientNetB0 model.
+
+* **Kolam Generation**
+  Use AI-assisted pattern generation to explore variations and new design structures.
+
+* **Interactive Drawing Canvas**
+  A web-based drawing tool that enables users to create, save, and refine their own Kolam patterns directly in the browser.
+
+* **AI Chat Interface**
+  A research-focused conversational assistant providing historical context, technique guidance, symbolism explanations, and cultural interpretation.
+
+* **Mood-Based Pattern Recommendations**
+  Suggests design styles based on preference categories such as symmetry, complexity, and color impact.
+
+---
+
+## How It Works
+
+1. Users upload or draw a Kolam.
+2. The input is processed through a Python Flask backend.
+3. Classification is performed using a TensorFlow model.
+4. Optional AI APIs support conversation and generative logic.
+5. Results are rendered in the interface and optionally stored client-side.
+
+---
+
+## Project Structure
+
+```bash
+kolam_app/
 │
-├── app.py                  # Flask backend
-├── requirements.txt        # Python packages
-├── Procfile                # For deployment
+├── app.py                        # Flask backend
+├── requirements.txt              # Dependencies
+├── Procfile                      # Deployment support
 │
-├── models/                 
-│   └── kolam_classifier.keras   # Pre-trained EfficientNetB0 model
+├── models/
+│   └── kolam_classifier.keras    # Pretrained EfficientNetB0 model
 │
 ├── static/
 │   ├── css/
-│   │   └── stylesheet.css
-│   ├── js/
-│   │   └── script.js
+│   └── js/
 │
 ├── templates/
-│   └── index.html
+│   └── index.html                # Main interface
 │
-├── notebooks/              # for showing the training notebook
-│   ├── preprocess_images.ipynb
-│   └── train_model.ipynb
-│
-└── README.md
+└── notebooks/                    # Training and preprocessing notebooks
 ```
-> **Note:** The `notebooks/` folder is optional and only for demo purposes; it shows how we preprocessed data and trained the model.  
-> The running prototype only needs `app.py`, `.keras` model, and frontend files.
 
 ---
 
-## ⚙️ Tech Stack
+## Getting Started
 
-**Frontend:** HTML, CSS, JavaScript (canvas API for drawing)  
-**Backend:** Python Flask  
-**Machine Learning:** TensorFlow/Keras (EfficientNetB0 for classification, optional generative model)  
-**Chatbot:** AI model via API (e.g., OpenAI GPT)  
-**Deployment (Free options):**  
-- Frontend → Vercel (static)  
-- Backend → Render (Flask server)  
+### Prerequisites
 
----
+* Python 3.8+
+* Flask and TensorFlow installed
+* API key for chatbot integration (optional)
 
-## How to Run Locally
+### 1. Clone the Repository
 
-**Clone the repo:**
-```
-bash
+```bash
 git clone https://github.com/hannahjan06/kolamify_SIH.git
 cd kolam_app
 ```
-**Install dependencies**
-```
+
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
-**Run the Flask app**
-```
+
+### 3. Run the Application
+
+```bash
 python app.py
 ```
-> By default, it will run at http://127.0.0.1:5000/.  
-> Open the frontend  
-> Open index.html in your browser (or use Flask’s template rendering). All features—upload, generate, chatbot, and drawing—will be functional.  
 
-## Features in Detail
+Application will be accessible at:
 
-| Feature | Description |
-|---------|-------------|
-| **Kolam Classification** | Upload a Kolam image, get AI-predicted motif/type. |
-| **Kolam Generation** | Generate new Kolam designs using AI. |
-| **Draw Your Own Kolam** | Draw, color, and save personal Kolams. |
-| **Mood-based Recommendations** | View symmetric designs for relaxation or colorful ones for inspiration. |
+```
+http://127.0.0.1:5000/
+```
 
 ---
 
-## Training notebooks
+## Usage
 
-For anyone who wants to see our workflow:
-
-- `preprocess_images.ipynb` → Shows how we converted images to matrix form for model input.  
-- `train_model.ipynb` → Contains model training, testing, and saving `.keras` files.
-
----
-
-## 💡 Extra Notes
-
-- **Model files:** Only `kolam_classifier.keras` is needed for running the prototype.  
-- **Data:** Original datasets are not included; the prototype runs with the saved model.  
-- **Extensibility:** You can add a generative Kolam model, enhanced chatbot, or user login features later.
+* Upload an existing Kolam pattern for classification
+* Generate variations using AI-assisted logic
+* Draw and export custom Kolam designs
+* Use the AI assistant to study cultural and design aspects
+* Explore algorithm-based recommendations for inspiration or learning
 
 ---
 
-## References
+## Tech Stack
 
-- KolamNet: Kolam classification using EfficientNetB0  
-- Generative AI for Rangoli/Kolam patterns  
-- Art therapy benefits of coloring mandala/symmetric patterns  
-- Digitization of cultural heritage – Ministry of Culture
+| Layer            | Technologies                        |
+| ---------------- | ----------------------------------- |
+| Frontend         | HTML, CSS, JavaScript (Canvas API)  |
+| Backend          | Python Flask                        |
+| Machine Learning | TensorFlow/Keras (EfficientNetB0)   |
+| AI Assistant     | OpenAI / Gemini (optional)          |
+| Deployment       | Vercel (frontend), Render (backend) |
 
 ---
 
-## 👩‍💻 Know our Team
-### DebugDivas
-- Hannah Janawa
-- Avantika Mogha
-- Gargi Sharma
-- Ekta Yadav
-- Ankita Behera
-- Anshita Yadav
+## Roadmap
+
+* Mobile-optimized redesign
+* Multi-language support including regional Indian languages
+* Generative adversarial model for automated pattern synthesis
+* User accounts, saving history, and community gallery
+* Dataset expansion for additional motif types and accuracy improvements
+
+---
+
+## Contributing
+
+Contributions are welcome in model performance, UI enhancements, dataset curation, or cultural research expansion. Submit a pull request with clear documentation of changes.
+
+---
+
+## Acknowledgements
+
+* Cultural heritage documentation initiatives and Kolam research publications
+* TensorFlow and open-source tooling community
+* Design and accessibility research in creative interfaces
+
+---
+
+### Team DebugDivas
+
+* Hannah Janawa
+* Avantika Mogha
+* Gargi Sharma
+* Ekta Yadav
+* Ankita Behera
+* Anshita Yadav
