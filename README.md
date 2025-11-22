@@ -21,8 +21,6 @@
   <img src="https://img.shields.io/badge/JavaScript%20Canvas-007ACC?style=for-the-badge">
 </p>
 
----
-
 ## Overview
 
 Kolamify AI is an interactive cultural heritage platform focused on preserving and modernizing the South Indian art form known as Kolam. The system combines machine learning, generative design, and guided educational interaction to help users explore, create, and understand traditional Kolam patterns in a structured and meaningful way.
