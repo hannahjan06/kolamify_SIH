@@ -17,7 +17,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask&logoColor=white">
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
-  <img src="https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript%20Canvas-007ACC?style=for-the-badge">
 </p>
 
